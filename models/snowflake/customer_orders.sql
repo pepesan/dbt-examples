@@ -8,4 +8,4 @@
 }}
 
 SELECT *
-FROM {{ ref('snowflake_data_sample.tpch_sf1.orders') }};
+FROM PC_DBT_DB.DBT_DVAQUERO.CUSTOMER
