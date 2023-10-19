@@ -3,6 +3,6 @@
 
 select * 
 
-from from {{ source('dev', 'IMPORT_CUSTOMER') }}
+from {{ source('dev', 'IMPORT_CUSTOMER') }}
 
 Where C_ACCTBAL >1000
