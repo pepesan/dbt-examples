@@ -2,12 +2,14 @@ version: 2
 
 sources:
   - name: dev
-    description: desarrolo local
+    description: tabla de csv cargado
     database: PC_DBT_DB
     schema: DBT_DVAQUERO
     tables:
+      - name: CUSTOMER
+        description: tabla en produccion
       - name: IMPORT_CUSTOMER
-      - name: RESUMEN_CUSTOMER
+        description: tabla en produccion
   - name: snowflake
     description: tabla de csv cargado
     database: SNOWFLAKE_SAMPLE_DATA
