@@ -10,6 +10,13 @@ sources:
             description: One record per customer.
           - name: orders
             description: One record per order. Includes cancelled and deleted orders.
+    - name: dev
+      description: desarrolo local
+      database: PC_DBT_DB
+      schema: DBT_DVAQUERO
+      tables:
+        - name: IMPORT_CUSTOMER
+        - name: RESUMEN_CUSTOMER
     - name: snowflake
       description: tabla de csv cargado
       database: SNOWFLAKE_SAMPLE_DATA
