@@ -1,6 +1,18 @@
 version: 2
 
 models:
+  - name: import_customer_simple
+    description: importacion de datos simple
+  - name: import_customer
+    description: importacion de datos con source
+  - name: resumen_customer
+    description: datos resumidos de import_customer con source
+  - name: uso_macro_customer
+    description: datos resumidos de import_customer con source
+    columns:
+      - name: C_CUSTKEY 
+        tests:
+          - not_null  
   - name: my_first_dbt_model
     description: "A starter dbt model"
     columns:
