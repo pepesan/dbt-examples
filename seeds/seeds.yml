@@ -1,0 +1,12 @@
+version: 2
+seeds:
+  - name: customersdavid
+    description: "datos de prueba"
+    docs:
+      show: true
+    columns: [
+      { name: customer_id, tests: ["not_null"] },
+      { name: customer_name, tests: ["not_null"] },
+      { name: email, tests: ["not_null"] },
+      { name: phone, tests: ["not_null"] }
+    ]
